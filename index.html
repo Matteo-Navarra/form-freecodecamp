@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <main id="container">
+        <header class="header">
+
+            <h1 id="title">Modulo di contatto</h1>
+        </header>
+
+        <div class="description">
+            <i id="description">questo è un modulo dove inserire i dati richiesti</i>
+        </div>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="entry your name" required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="entry your email" required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Number</label>
+                <input type="number" name="number" id="number" min="10" max="99" class="form-control" placeholder="entry your number" required>
+
+
+                <p>Which option best describes your current role?</p>
+                <select name="role" id="dropdown">
+                <option disabled selected value>select you role</option>
+                <option value="student">student</option>
+                <option value="full-time-job">full time job</option>
+                <option value="part-time-job">part time job</option>
+                <option value="other">other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                <input type="radio" value="definitely" name="user-reccomend" class="input-radio" checked >Definitely
+            </label>
+                <label>
+                <input type="radio" value="mayby" name="user-reccomend" class="input-radio" checked >mayby
+            </label>
+                <label>
+                <input type="radio" value="not-sure" name="user-reccomend" class="input-radio" checked >"not sure"
+            </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select id="most-like" name="most-like" class="form-control" required>
+                <option disabled selected value>select you role</option>
+                <option value="challenge">challenge</option>
+                <option value="project">project</option>
+                <option value="community">community</option>
+                <option value="open-source">open source</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+                <p>What would you like to see improved?</p>
+                <span class="clue">chek all that apply</span>
+                <label>
+            <input type="checkbox" value="front-end-project" name="prefer" class="input-ceckbox" >"front-end-project"
+        </label>
+                <label>
+            <input type="checkbox" value="back-end-projects" name="prefer" class="input-ceckbox" >"back-end-projects"
+        </label>
+                <label>
+            <input type="checkbox" value="data-visualization" name="prefer" class="input-ceckbox" >"data-visualization"
+        </label>
+                <label>
+            <input type="checkbox" value="challenges" name="prefer" class="input-ceckbox" >"challenges"
+        </label>
+                <label>
+            <input type="checkbox" value="open-source-community" name="prefer" class="input-ceckbox" >"open-source-community"
+        </label>
+                <label>
+            <input type="checkbox" value="blockchain" name="prefer" class="input-ceckbox" >"blockchain"
+        </label>
+                <label>
+            <input type="checkbox" value="addictional-course" name="prefer" class="input-ceckbox" >"addictional-course"
+        </label>
+
+
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" class="input-textarea" id="comment" placeholder="enter you comment...."></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit" class="submit-button">invia</button>
+            </div>
+
+
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

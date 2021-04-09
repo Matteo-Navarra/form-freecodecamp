@@ -1,0 +1,64 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #dddd;
+    }
+    
+    #container {
+        width: 70%;
+        background: #d3d3d3;
+        margin: 0 auto;
+    }
+    
+    header h1 {
+        text-align: center;
+        color: rgba(43, 42, 42, 0.333);
+    }
+    
+    .description {
+        text-transform: capitalize;
+        color: aliceblue;
+        text-align: center;
+        padding: 2.5rem;
+    }
+    
+    #survey-form {
+        text-align: center;
+        padding: 1.rem;
+    }
+    
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: justify;
+    }
+    
+    .form-group p {
+        padding-top: 3.5rem;
+    }
+    
+    .form-control {
+        border: 1px solid #d3d3d3;
+        width: 20vh;
+        border-radius: 5px;
+    }
+    
+    #dropdown {
+        border: 1px solid #d3d3d3;
+        width: 20vh;
+        border-radius: 5px;
+    }
+    
+    .input-textarea {
+        height: 20vh;
+    }
+    
+    #submit {
+        margin: 0 auto;
+        width: 20vh;
+    }
